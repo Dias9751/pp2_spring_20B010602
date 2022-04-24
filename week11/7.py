@@ -101,7 +101,7 @@ def main():
                 rect_finish_x, rect_finish_y = position
                 """print ("FINISH", rect_finish_x, rect_finish_y)
                 print (pos1, pos2)"""
-                #pygame.draw.ellipse(screen, (0, 128, 255), pygame.Rect(cir_start_x, cir_start_y, rect_finish_x-cir_start_x, rect_finish_y-cir_start_y))
+                pygame.draw.ellipse(screen, (0, 128, 255), pygame.Rect(cir_start_x, cir_start_y, rect_finish_x-cir_start_x, rect_finish_y-cir_start_y))
                 # триугольник
                 """pygame.draw.lines(screen, (255,255,255), True,
                   [[cir_start_x, cir_start_y], [rect_finish_x, rect_finish_y],
@@ -111,15 +111,15 @@ def main():
                   [[cir_start_x, cir_start_y], [rect_finish_x, rect_finish_y],
                    [cir_start_x+70, rect_finish_y]], 2)"""
                    # romb
-                pygame.draw.polygon(screen, (255,255,255),
+                """pygame.draw.polygon(screen, (255,255,255),
                   [[(cir_start_x+rect_finish_x)/2, cir_start_y], [cir_start_x - 50, (cir_start_y+rect_finish_y)/2],
-                   [(cir_start_x+rect_finish_x)/2, rect_finish_y], [rect_finish_x+50, (cir_start_y+rect_finish_y)/2]])
+                   [(cir_start_x+rect_finish_x)/2, rect_finish_y], [rect_finish_x+50, (cir_start_y+rect_finish_y)/2]])"""
                 """pygame.draw.polygon(screen, (255,255,255), 
                     [(200, 200), (250, 250), (200, 300), (150, 250)])
                    pygame.draw.aalines(sc, WHITE, True, 
                     [[250, 110], [280, 150], 
-                     [190, 190], [130, 130]])
-                    """
+                     [190, 190], [130, 130]])"""
+                    
                 pygame.display.flip()
 
             
